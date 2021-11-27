@@ -10,7 +10,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           CODEBLOCK="\`\`\`"
-          echo $CODEBLOCK > report.md
+          echo "my local gpu" > report.md
+          echo $CODEBLOCK >> report.md
           nvidia-smi >> report.md
           echo $CODEBLOCK >> report.md
 
