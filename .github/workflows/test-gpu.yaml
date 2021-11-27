@@ -9,8 +9,7 @@ jobs:
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          export CODEBLOCK="\`\`\`"
-
+          CODEBLOCK="\`\`\`"
           echo $CODEBLOCK > report.md
           nvidia-smi >> report.md
           echo $CODEBLOCK >> report.md
