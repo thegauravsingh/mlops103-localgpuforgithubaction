@@ -14,4 +14,4 @@ jobs:
           nvidia-smi >> report.md
           echo $CODEBLOCK >> report.md
 
-          cml-send-comment > report.md
+          cml-send-comment report.md
